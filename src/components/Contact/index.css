@@ -1,124 +1,169 @@
-.get-in-touch {
-    display: flex;
-    flex-direction: column;
-    background-color: #f3f4f6;
-    padding: 5rem; /* Increased padding for container */
-    border-radius: 0.75rem; /* Slightly larger border radius */
-    box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Enhanced shadow */
-    max-width: 90rem; /* Increased max width for the container */
-    margin: 0 auto;
+:root {
+  --bg-dark: #ffffff; /* White background */
+  --bg-darker: #f8f8f8; /* Light gray background for sections */
+  --text-primary: rgb(6, 82, 6); /* Green text */
+  --text-secondary: #555555; /* Slightly darker gray for secondary text */
+  --accent: #E4960E; /* Icon border color */
+  --input-bg: #f0f0f0; /* Light gray input background */
+  --border-color: #E4960E; /* Border color */
+}
+
+body {
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-dark); /* White background for the page */
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-info {
+  background-color: var(--bg-darker);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin-top: 30%;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(74, 222, 128, 0.1);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #E4960E;
+  border-radius: 1rem;
+  color: white;
+  border: 2px solid #E4960E; 
+}
+
+.icon-wrapper:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  color: #E4960E;
+  border: 3px solid #E4960E; 
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  color: var(--text-secondary);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 3px;
+}
+
+.info-value {
+  color: var(--text-primary);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form {
+  background-color: var(--bg-darker);
+  border-radius: 1rem;
+  padding: 4rem;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.contact-form h2 {
+  margin-bottom: 2rem;
+  font-size: 1.65rem;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--input-bg);
+  border: 2px solid rgb(6, 82, 6);
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  font-size: 20px;
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.message {
+  resize: none;
+  min-height: 150px;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-self: flex-end;
+  background-color: rgb(6, 82, 6);
+  color: white;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 20px;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: rgb(6, 82, 6);
+  border:solid 2px rgb(6, 82, 6);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
   }
-  
-  @media (min-width: 768px) {
-    .get-in-touch {
-      flex-direction: row;
-    }
-  }
-  
-  .contact-info {
-    flex: 1;
-    padding-right: 3rem; /* Increased padding */
-  }
-  
-  .contact-info h2 {
-    font-size: 2.25rem; /* Increased font size */
-    font-weight: bold;
-    margin-bottom: 1.5rem; /* Increased margin */
-  }
-  
-  .contact-info p {
-    color: #4b5563;
-    margin-bottom: 2rem; /* Increased margin */
-  }
-  
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Increased gap */
-  }
-  
-  .contact-item {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    width: 2rem; /* Increased icon size */
-    height: 2rem; /* Increased icon size */
-    color: rgb(6, 82, 6);
-    margin-right: 1rem; /* Increased margin */
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 1.5rem; /* Increased gap */
-    margin-top: 2rem; /* Increased margin */
-  }
-  
-  .social-icon {
-    color: #4b5563;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: rgb(6, 82, 6);
-  }
-  
-  .social-icon svg {
-    width: 2rem; /* Increased social icon size */
-    height: 2rem; /* Increased social icon size */
-  }
-  
-  .contact-form {
-    flex: 1;
-    margin-top: 3rem; /* Increased margin */
-  }
-  
-  @media (min-width: 768px) {
-    .contact-form {
-      margin-top: 0;
-    }
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Increased gap */
-    background-color: white;
-    padding: 4rem ; /* Increased padding */
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 93%;
-    padding: 1rem 1.25rem; /* Increased padding */
-    border: 1px solid rgb(6, 82, 6);
-    border-radius: 0.25rem;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    font-size: 1.125rem; /* Increased font size */
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: rgb(6, 82, 6);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-  }
-  
-  .contact-form button {
-    background-color: rgb(6, 82, 6);
-    color: white;
-    padding: 0.75rem 1.5rem; /* Increased padding */
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.125rem; /* Increased font size */
-  }
-  
-  .contact-form button:hover {
-    background-color: rgb(6, 82, 6);
-  }
-  
+}

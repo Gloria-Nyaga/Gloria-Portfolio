@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Contact from './components/Contact/contact';
 
 
 function App() {

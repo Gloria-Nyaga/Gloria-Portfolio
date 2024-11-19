@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { NavLink } from 'react-router-dom';
 
 function About() {
   return (
@@ -23,7 +24,7 @@ function About() {
         intuitive experiences. 
         </p>
 
-        <p>
+        <p className="description">
         My experience includes designing responsive interfaces, building 
         scalable APIs, and developing mobile apps, with a focus on providing user friendly interfaces. 
         I like connecting with professionals to exchange ideas and learn from one another, as I
@@ -32,9 +33,10 @@ function About() {
 
         </p>
         <div className="btn-box">
-          <a href="#">Contact Me</a> 
-
-        </div>
+        <NavLink to="/contact" className="btn-link">
+          Contact Me
+        </NavLink>
+      </div>
       </div>
     </div>
   );

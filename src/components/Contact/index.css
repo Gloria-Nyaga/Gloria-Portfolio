@@ -14,6 +14,12 @@ body {
   background-color: var(--bg-dark); /* White background for the page */
 }
 
+.contact-section {
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 6rem 0;
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: 350px 1fr;

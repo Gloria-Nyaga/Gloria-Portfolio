@@ -20,7 +20,7 @@ const skills = [
 
 const Skills = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const skillsPerPage = 6; // Two rows of three columns each
+  const skillsPerPage = 6; 
 
   const handleNextPage = () => {
     if ((currentPage + 1) * skillsPerPage < skills.length) {

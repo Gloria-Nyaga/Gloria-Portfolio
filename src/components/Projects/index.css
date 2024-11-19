@@ -5,6 +5,13 @@
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
+    
+  }
+
+  .projects-section {
+    width: 100%;
+    background-color: #f9fafb;
+    padding: 6rem 0;
   }
   
   .project-card {
@@ -40,14 +47,14 @@
     padding: 0 2.5rem;
     text-align: justify;
     font-size: 1.2rem;
-    color: rgb(6, 82, 6);
+    color: black;
   }
   
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
-    color: rgb(6, 82, 6);
+    color: black;
     margin-left: 22%;
   }
   

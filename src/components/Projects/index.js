@@ -38,14 +38,14 @@ const Projects = () => {
       description: 'This is a role based Progressive Web Application that aims to ensure transparency during the land acquistion process between the land buyer and the land seller.',
       techStack: ['NextJS', 'Django', 'Python'],
       repoLink: 'https://shawazi-magezi.vercel.app/',
-      imageUrl: 'images/shawazi.png'
+      imageUrl: '/images/shawazi.png'
     },
     {
       title: 'Informational Website',
       description: ' Shawazi informational website, is your go-to resource for project details, operational insights, and team introductions. Here, you can explore how Shawazi works and meet the talented individuals behind the initiative.',
       techStack: ['NextJS'],
       repoLink: 'https://magezi-informational-c594.vercel.app/',
-      imageUrl: 'images/shawazi-info.png'
+      imageUrl: '/images/shawazi-info.png'
     },
     {
       title: 'Musica',

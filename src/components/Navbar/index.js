@@ -1,17 +1,27 @@
 import React from 'react';
-import './index.css'; 
-
+import { NavLink } from 'react-router-dom';
+import './index.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <a href="#" className="logo">Gloria.</a>
       <div className="nav-links">
-        <a href="/components/LandingPage" className="active">Home</a>
-        <a href="/components/About">About</a>
-        <a href="/components/Skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+          Home
+        </NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+          About
+        </NavLink>
+        <NavLink to="/skills" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+          Skills
+        </NavLink>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+          Projects
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+          Contact
+        </NavLink>
       </div>
     </nav>
   );

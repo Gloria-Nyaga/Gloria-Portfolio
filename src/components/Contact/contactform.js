@@ -46,7 +46,6 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form">
-            <h2>Contact Form</h2>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -77,7 +76,7 @@ const ContactForm = () => {
                 />
                 <button
                     type="submit"
-                    disabled={status.submitting || !isFormValid} // Button disabled if form is incomplete
+                    disabled={status.submitting || !isFormValid} 
                     className="submit-button"
                 >
                     {status.submitting ? 'Sending...' : 'Send Message'}

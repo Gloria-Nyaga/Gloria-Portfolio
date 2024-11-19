@@ -1,15 +1,11 @@
 import React from 'react';
-import ContactInfo from './contactinfo';
-import ContactForm from './contactform';
+import ReactDOM from 'react-dom';
 import './index.css';
+import Contact from './contact';
 
-const Contact = () => {
-  return (
-    <div className="contact-container">
-      <ContactInfo />
-      <ContactForm />
-    </div>
-  );
-};
-
-export default Contact;
+ReactDOM.render(
+  <React.StrictMode>
+    <Contact />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

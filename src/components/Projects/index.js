@@ -54,6 +54,46 @@ const Projects = () => {
       repoLink: 'https://musica-website-app.vercel.app/',
       imageUrl: 'images/musica.png'
     },
+
+    {
+      title: 'Kipepeo',
+      description: 'Kipepeo is a Haute Couture fashion brand inspired by the elegance and transformative beauty of butterflies. The website showcases exquisite, handcrafted designs while spotlighting premium clothing collections. ',
+      techStack: ['Figma', 'Adobe Illustrator'],
+      repoLink: 'https://www.figma.com/design/h6brtyRmfNwvbW84k8Y6vB/Kipepeo-Fashion?node-id=0-1&t=E1c7612Vu7TR5tyA-1',
+      imageUrl: '/images/kipepeo.png'
+    },
+
+    {
+      title: 'Mkulima',
+      description: 'Mkulima is a sample design interface for co-operative agents and farmers to manage farmer profiles, process loan applications, monitor repayments, and provide support services. ',
+      techStack: ['Figma', 'Adobe Illustrator'],
+      repoLink: 'https://www.figma.com/design/EUUV64BzyeWKSxjpG3I4xV/Mkulima-Wireframes-Design?node-id=43-24&t=56IXlMQy4WhH2F8f-1',
+      imageUrl: '/images/mkulima.png'
+    },
+
+    {
+      title: 'MamaMind',
+      description: 'MamaMind is a mobile application designed to support mothers suffering from postpartum depression (PPD). The app is used by Community Health Promoters (CHPs) to provide personalized care for mothers, helping them enhance their mental and physical well-being through visits, mental health tracking, and access to comprehensive care guides. ',
+      techStack: ['Kotlin', 'Mobile Development'],
+      repoLink: 'https://appetize.io/app/b_tpnkfxzpxct3u6lrdijfusob2u',
+      imageUrl: '/images/mamamind.png'
+    },
+
+    {
+      title: 'Wezesha',
+      description: 'This is a Mobile Application designed to support farmers by ensuring transparency in accessing loans, thereby empowering them to enhance milk productivity and overall dairy farming efficiency. ',
+      techStack: ['Kotlin', 'Mobile Development'],
+      repoLink: 'https://appetize.io/app/b_xwgukpnzqehusvpscgzwydgzki',
+      imageUrl: 'images/wezesha.png'
+    },
+
+    {
+      title: 'Dishhub',
+      description: 'This is an Android app that helps users generate recipes based on the ingredients they have in their pantry. It also includes a shopping list feature for users to add items they need to purchase. ',
+      techStack: ['Kotlin', 'Mobile Development'],
+      repoLink: 'https://appetize.io/app/b_tgmcbpmyaylrsldtoruqw5yr3m',
+      imageUrl: 'images/dishhub.png'
+    },
   ];
 
   return (

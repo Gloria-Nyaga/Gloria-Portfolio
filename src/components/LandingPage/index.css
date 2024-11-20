@@ -76,6 +76,7 @@ main {
 .btn-box a {
     width: 200px;
     height: 70px;
+    margin-top: 10%;
     background-color: transparent;
     border: 2px solid rgb(6, 82, 6);
     border-radius: 8px;
@@ -134,13 +135,6 @@ main {
     border-radius: 9999px;
 }
 
-.footer {
-    padding: 1rem 0; 
-    color: white; 
-    position: relative; 
-    text-align: center; 
-}
-
 .social-links {
     position: absolute;
     bottom: 40px;
@@ -167,7 +161,7 @@ main {
     color: rgb(6, 82, 6);
     z-index: 1;
     overflow: hidden;
-    transition: background 0.3s, color 0.3s; /* Smooth transition */
+    transition: background 0.3s, color 0.3s; 
 }
 
 .social-links a::before {

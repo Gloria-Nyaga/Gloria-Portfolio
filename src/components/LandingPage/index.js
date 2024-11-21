@@ -44,31 +44,46 @@ const Homepage = () => {
   }, [roleIndex, displayText, isDeleting, roles]);
 
   return (
-    <main className="landing-page">
-      <div className="text-section">
-        <h1 className="heading">Hi, I'm Gloria Nyaga</h1>
-        
-        <div className="typewriter-container">
-          <h3>I am a <span style={{ color: '#E4960E' }}>{displayText}</span></h3>
+    <div className="landing-page">
+      <div className="landing-section">
+        <div className="text-section">
+          <h1 className="heading">Hi, I'm Gloria Nyaga</h1>
+          
+          <div className="typewriter-container">
+            <h3>I am a <span style={{ color: '#E4960E' }}>{displayText}</span></h3>
+          </div>
+
+          <p className="description">
+            I believe that the intersection of software development and UI/UX design inspires my passion to develop 
+            seamless experiences that prioritize user needs. By blending technical expertise with my design skills, 
+            my goal is to create engaging interfaces that enhance interaction and foster connection.
+          </p>
+
+          <div className="btn-box">
+            
+            <a href="/documents/Nyaga Gloria - CV.pdf" className="btn-download">
+              Download CV <FaDownload />
+            </a>
+
+            <a href="#" className="btn-hire">
+              Hire Me
+            </a>
+          </div>
+
+          
         </div>
 
-        <p className="description">
-          I believe that the intersection of software development and UI/UX design inspires my passion to develop 
-          seamless experiences that prioritize user needs. By blending technical expertise with my design skills, 
-          my goal is to create engaging interfaces that enhance interaction and foster connection.
-        </p>
-
-        <div className="btn-box">
-          <a href="#" className="btn-download">
-            Download CV <FaDownload />
-          </a>
-          <a href="#" className="btn-hire">
-            Hire Me
-          </a>
+        <div className="image-section">
+          <img 
+            src="/images/gloria.png" 
+            alt="Gloria Nyaga" 
+            className="profile-image"
+          />
         </div>
 
+      </div>
 
-        <div className="social-links">
+      <div className="social-links">
           <a href="https://github.com/Gloria-Nyaga" target="_blank" rel="noopener noreferrer">
             <TbBrandGithubFilled />
           </a>
@@ -81,17 +96,9 @@ const Homepage = () => {
           <a href="#" target="_blank" rel="noopener noreferrer">
             <FaFacebookF />
           </a>
-        </div>
       </div>
-      <div className="image-section">
-        <img 
-          src="/images/gloria.png" 
-          alt="Gloria Nyaga" 
-          className="profile-image"
-        />
-        <div className="gradient-overlay"></div>
-      </div>
-    </main>
+
+    </div>
   );
 };
 

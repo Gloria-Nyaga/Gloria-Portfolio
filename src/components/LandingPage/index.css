@@ -1,21 +1,10 @@
-main {
-    display: flex;
-    padding: 0 8%;
-    /* overflow: hidden; */
-    background-size: cover;
-    align-items: center;
-    flex-wrap: wrap; 
-}
 
-.text-section h1 {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1.5;
-}
-
-.text-section h3 {
-    font-size: 35px;
-    font-weight: 700;
+.landing-section {
+  display: flex;
+  padding: 0 8%;
+  background-size: cover;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 .typewriter-container {
@@ -23,6 +12,12 @@ main {
     min-width: 300px;
     overflow: hidden;
     margin-top: 5px; 
+    font-size: 40px;
+}
+
+.typewriter-container h3 {
+  margin-top: 5px; 
+  font-size: 30px;
 }
 
 .text-section h3:nth-of-type(2) {
@@ -47,11 +42,13 @@ main {
 }
 
 .heading {
-    font-size: 3rem; 
+    font-size: 100px; 
     font-weight: bold;
     color: rgb(6, 82, 6);
-    margin-bottom: 1rem; 
+    margin-bottom: 40px;
+
 }
+
 
 .typewriter-effect {
     color: rgb(6, 82, 6); 
@@ -60,9 +57,11 @@ main {
 
 .description {
     color: rgb(8, 14, 8); 
-    margin-bottom: 2rem;
-    font-size: 30px;
-    line-height: 40px;
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: justify;
+    padding-top: 30px;
 }
 
 .landing-page .btn-box {
@@ -110,9 +109,6 @@ main {
 
 .image-section {
     width: 80%; 
-    justify-content: center; 
-    align-items: center; 
-    position: absolute; 
     margin-left: 100px;
     border-radius: 50%;
 }
@@ -122,18 +118,10 @@ main {
     height: auto;
     margin-left: 100px;
     margin-top: 10%;
-    /* border-radius: 50%; */
+
 }
 
-.gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to right, rgb(135, 172, 135), transparent);
-    border-radius: 9999px;
-}
+
 
 .social-links {
     position: absolute;
@@ -142,6 +130,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 160px;
 
 }
 
@@ -151,8 +140,8 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 5px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     border: 2px solid rgb(6, 82, 6);
     border-radius: 50%;
@@ -173,7 +162,7 @@ main {
     height: 100%;
     background: rgb(6, 82, 6);
     z-index: -1;
-    transition: width 0.5s; /* Smooth width transition */
+    transition: width 0.5s;
 }
 
 .social-links a:hover::before {
@@ -184,3 +173,834 @@ main {
     color: white;
 }
 
+@media screen and (min-width: 280px) and (max-width: 360px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 130%;
+    text-align: left;
+  }
+
+  .text-section p{
+    width: 120%;
+    max-width: 130%;
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .text-section h1{
+    width: 100%;
+    max-width: 130%;
+    text-align: justify;
+    font-size: 40px;
+  }
+
+  .text-section h3{
+    width: 100%;
+    max-width: 130%;
+    text-align: justify;
+    font-size: 30px;
+  }
+
+  .image-section img{
+    width: 180%; 
+    height: 250px;
+    margin-right: 100%;
+    margin-top: 40%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+  }
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 20%;
+    gap: 100px;
+}
+
+.btn-box a {
+    width: 100%;
+    max-width: 650px;
+    height: 100px; 
+    font-size: 16px;
+    margin-top: -10px; 
+    display: flex;
+    margin-bottom: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+  position: relative;
+  bottom: auto;
+  width: 100%;
+  justify-content: center;
+  margin-left: 0;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+}
+
+@media screen and (min-width: 370px) and (max-width: 390px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .text-section h1{
+    font-size: 38px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 20%;
+    gap: 100px;
+}
+
+.btn-box a {
+    width: 100%;
+    max-width: 650px;
+    height: 100px;
+    font-size: 16px;
+    margin-top: -10px; 
+    display: flex;
+    margin-bottom: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+  .image-section img{
+    width: 152%; 
+    height: 250px;
+    margin-right: 120%;
+    margin-top: 20%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: -5px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 413px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .text-section h1{
+    font-size: 38px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 20%;
+    gap: 100px;
+}
+
+.btn-box a {
+    width: 100%;
+    max-width: 650px;
+    height: 100px; 
+    font-size: 16px;
+    margin-top: -10px; 
+    display: flex;
+    margin-bottom: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+  .image-section img{
+    width: 152%; 
+    height: 250px;
+    margin-right: 120%;
+    margin-top: 20%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    margin-left: -5px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 520px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .text-section h1{
+    font-size: 38px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 20%;
+    gap: 100px;
+}
+
+.btn-box a {
+    width: 100%;
+    max-width: 650px;
+    height: 100px; 
+    font-size: 16px;
+    margin-top: -10px; 
+    display: flex;
+    margin-bottom: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+  .image-section img{
+    width: 152%; 
+    height: 250px;
+    margin-right: 120%;
+    margin-top: 20%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 62px;
+    margin-left: -5px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 720px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .text-section h1{
+    font-size: 38px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+  .btn-box a {
+    width: 250px;
+    height: 70px;
+    margin-top: 10%;
+    font-size: 20px;
+
+}
+
+.btn-box {
+  margin-left: 5%;
+  
+}
+
+
+
+  .image-section img{
+    width: 152%; 
+    height: 300px;
+    margin-right: 70%;
+    margin-top: 40%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: -5px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 815px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .text-section h1{
+    font-size: 38px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+  .btn-box a {
+    width: 250px;
+    height: 70px;
+    margin-top: 10%;
+    font-size: 20px;
+
+}
+
+.btn-box {
+  margin-left: 20%;
+  
+}
+
+  .image-section img{
+    width: 160%; 
+    height: 360px;
+    margin-right: 50%;
+    margin-top: 30%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: -5px;
+  }
+
+  .social-links a {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1000px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .text-section h1{
+    font-size: 38px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+  .btn-box a {
+    width: 250px;
+    height: 70px;
+    margin-top: 10%;
+    font-size: 20px;
+
+}
+
+.btn-box {
+  margin-left: 20%;
+  
+}
+
+  .image-section img{
+    width: 160%; 
+    height: 360px;
+    margin-right: 50%;
+    margin-top: 30%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: -5px;
+  }
+
+  .social-links a {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1200px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 7%;
+    align-items: center;
+  }
+
+  .landing-page {
+    margin-top: 10%;
+    width: 80%;
+    font-size: 10px;
+
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+    flex-wrap: wrap;
+  }
+
+  .text-section p{
+    text-align: justify;
+    font-size: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 110%;
+
+  }
+
+  .text-section h1{
+    font-size: 60px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+  .text-section h3{
+    font-size: 50px; 
+    width: 100%;
+    margin-right: 20px;
+
+  }
+
+
+  .typewriter-container h3 {
+    display: inline-block; 
+    min-width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .description  {
+    color: rgb(8, 14, 8); 
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    padding-top: 10px;
+    margin-left: 30%;
+    width: 110%;
+  }
+
+  .btn-box a {
+    width: 450px;
+    height: 70px;
+    margin-top: 20%;
+    font-size: 20px;
+
+}
+
+.btn-box {
+  margin-left: 15%;
+  
+}
+
+  .image-section img{
+    width: 160%; 
+    height: 400px;
+    margin-right: 80%;
+    margin-top: 30%;
+
+  }
+
+  .profile-image {
+    width: 100%; 
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .social-links {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: -105px;
+  }
+
+  .social-links a {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}

@@ -1,82 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px;
+    
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 4%;
-    color: rgb(6, 82, 6); 
-    z-index: 100; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    background-color: white; 
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+    color: rgb(6, 82, 6);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-  
+
 .logo {
-    font-size: 25px; 
+    font-size: 25px;
+    font-weight: 600;
     font-family: 'Dancing Script', cursive;
-    font-weight: 600; 
     text-transform: uppercase;
     letter-spacing: 5px;
     color: rgb(6, 82, 6);
-    position: relative;
-    cursor: default;
     text-decoration: none;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
-.logo::after {
-    content: '';
-    position: absolute;
-    bottom: 9px;
-    right: -14px;
-    height: 12px;
-    width: 12px;
-    border-radius: 15px;
-}
-  
 .nav-links {
     display: flex;
     font-size: 20px;
     font-weight: 500;
-    margin-right: 60px;
-
+    gap: 80px;
 }
 
 .nav-links a {
-    color: rgb(6, 82, 6); 
-    text-decoration: none;
-    color: inherit;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease; 
-    margin-right: 110px;
-    gap: 5px;
-}
-
-.nav-link {
     color: rgb(6, 82, 6);
     text-decoration: none;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-  }
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
 
-  .nav-link:hover {
+.nav-link:hover,
+.nav-links a:hover {
     color: #E4960E;
-  }
-
-.nav-links a:hover  {
-    color:#E4960E; 
 }
 
 .nav-link.active {
-    color: #E4960E; 
+    color: #E4960E;
     font-weight: bold;
-    border-bottom: 3px solid #E4960E; 
-  }
-
-.nav-links a:active{
-    font-weight: bold;
-    color:#E4960E;
+    border-bottom: 3px solid #E4960E;
 }
-  
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    width: 25px;
+}
+
+.hamburger div {
+    height: 3px;
+    background-color: rgb(6, 82, 6);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Large Screen Responsive */
+@media screen and (max-width: 1024px) {
+    .hamburger {
+        display: flex;
+        z-index: 1100;
+        position: absolute;
+        right: 4%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 5%;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1050;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 24px;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active .line2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Specific Styling for 370-410px Screens */
+@media screen and (min-width: 370px) and (max-width: 410px) {
+    .navbar {
+        padding: 15px 3%;
+        width: 72%;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .hamburger {
+        width: 20px;
+        right: 3%;
+        margin-left: 40%;
+    }
+
+    .hamburger div {
+        height: 2px;
+        margin: 3px 0;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* Hamburger Animation for Small Screens */
+    .hamburger.active .line1 {
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    .hamburger.active .line2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .line3 {
+        transform: rotate(45deg) translate(-4px, -5px);
+    }
+}
+
+/* Prevent Horizontal Scrolling */
+@media screen and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}
